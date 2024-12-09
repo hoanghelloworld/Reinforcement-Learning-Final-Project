@@ -1,3 +1,4 @@
-git+https://github.com/Farama-Foundation/MAgent2
+magent2
+pettingzoo==1.22.0
 opencv-python
 torch
