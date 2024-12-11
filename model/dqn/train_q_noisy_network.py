@@ -7,7 +7,7 @@ from torch.utils.tensorboard import SummaryWriter
 from noisy_linear import DuelingNoisyQNetwork
 from .prioritized_replay_buffer import PrioritizedReplayBuffer
 from magent2.environments import battle_v4
-from evaluate_checkpoint_noise import evaluate_checkpoint_noise
+from evaluate.evaluate_checkpoint_noise import evaluate_checkpoint_noise
 import os
 
 def train():

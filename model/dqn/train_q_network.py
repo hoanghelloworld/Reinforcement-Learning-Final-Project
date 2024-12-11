@@ -10,7 +10,7 @@ from collections import deque
 import random
 from q_net_work import DuelingQNetwork
 from prioritized_replay_buffer import PrioritizedReplayBuffer
-from evaluate_checkpoint import evaluate_checkpoint
+from evaluate.evaluate_checkpoint import evaluate_checkpoint
 def train():
 # --- Initialize environment and device ---
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
