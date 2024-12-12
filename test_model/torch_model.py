@@ -2,7 +2,7 @@ import torch.nn as nn
 import torch
 
 
-class QNetwork(nn.Module):
+class RedQNetwork(nn.Module):
     def __init__(self, observation_shape, action_shape):
         super().__init__()
         self.cnn = nn.Sequential(
