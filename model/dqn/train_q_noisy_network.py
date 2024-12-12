@@ -150,16 +150,17 @@ def train():
             writer.add_scalar('Validation/Average Reward', val_reward, episode)
             print(f"Episode {episode}: Validation average steps = {val:.2f}, Validation average reward = {val_reward:.2f}")
 
-            if val < best_val:
+            if val <= best_val:
                 best_val = val
                 if best_checkpoint:
                     os.remove(best_checkpoint)
-                best_checkpoint = checkpoint_path
                 print(f"New best checkpoint saved at {best_checkpoint} with average steps {best_val:.2f}")
-
-    # --- Save final model (best checkpoint) ---
+            if val > best_val:
+                os.remove(checkpoint_path)
     if best_checkpoint:
-        print(f"Training complete. Best model saved at {best_checkpoint}")
+        best_checkpoint_final = "red_agent_dueling_noisy_ddqn_per_best.pth"
+        os.rename(best_checkpoint, best_checkpoint_final)
+        print(f"Training complete. Best model saved at {best_checkpoint_final}")
     else:
         torch.save(q_network_red.state_dict(), "red_agent_dueling_noisy_ddqn_per_final.pth")
-        print(f"Training complete. Best model saved at red_agent_dueling_noisy_ddqn_per_final.pth")
+        print(f"Training complete. Final model saved at red_agent_dueling_noisy_ddqn_per_final.pth")
