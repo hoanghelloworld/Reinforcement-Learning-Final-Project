@@ -7,7 +7,7 @@ This project trains a multi-agent RL model in the MAgent2 `battle` environment. 
 - A Final (stronger) Agent  
 
 For each setting, the performance is measured by rewards and win rates.
-
+The figure below depicts the results when the VDN mixer model competes with random opponents, pretrained agent, final pretrained agent.
 
 ![Caption: vdn_mixer VS Random Agent](https://github.com/user-attachments/assets/796d2134-90ea-4cac-b9bf-d51e1ff0aa9f)
 
