@@ -1,33 +1,36 @@
 # MAgent2 RL Final Project
+
 ## Overview
-In this final project, you will develop and train a reinforcement learning (RL) agent using the MAgent2 platform. The task is to solve a specified MAgent2 environment `battle`, and your trained agent will be evaluated on all following three types of opponents:
+This project trains a multi-agent RL model in the MAgent2 `battle` environment. The code sets up agents and evaluates them against:  
+- Random Agents  
+- A Pretrained Agent  
+- A Final (stronger) Agent  
 
-1. Random Agents: Agents that take random actions in the environment.
-2. A Pretrained Agent: A pretrained agent provided in the repository.
-3. A Final Agent: A stronger pretrained agent, which will be released in the final week of the course before the deadline.
+For each setting, the performance is measured by rewards and win rates.
+![vdn_mixer VS Random Agent](https://github.com/user-attachments/assets/796d2134-90ea-4cac-b9bf-d51e1ff0aa9f)
+![vdn_mixer VS redpt Agent](https://github.com/user-attachments/assets/14a048ce-ec38-4809-8d85-77bcd1d7772f)
+![vdn_mixer VS final Agent](https://github.com/user-attachments/assets/ac1f0f21-b968-45cd-bd09-509223fc9c88)
 
-Your agent's performance should be evaluated based on reward and win rate against each of these models. You should control *blue* agents when evaluating.
-
-
-<p align="center">
-  <img src="assets/random.gif" width="300" alt="random agent" />
-  <img src="assets/pretrained.gif" width="300" alt="pretrained agent" />
-</p>
-
-See `video` folder for a demo of how each type of opponent behaves.
 
 ## Installation
-clone this repo and install with
-```
 pip install -r requirements.txt
-```
+## Source Code Summary
+- **`dqn_train/dqn.ipynb`**: Main training script for the DQN-based agent.
+- **`dqn_train/dqn_noise_network.ipynb`**: Main training script for the DQN with Noise Network agent.
+- **`vdn_mixer_train/vdn_mixer.ipynb`**: Main training script for the VDN agent.
+- **`test_model/eval_test/test_dqn(others same).ipynb`**: Evaluation code against different opponents.  
+
+## Report
+Survey_on_MAgent2_Battle_Using_DQN_Variants_Report_Group22.pdf
+- Experimental setup  
+- DQN variant details  
+- Performance comparison and discussion  
 
 ## Demos
-See `main.py` for a starter code.
+For additional demos, see the `video` folder 
 
 ## References
+1. [MAgent2 GitHub Repository](https://github.com/Farama-Foundation/MAgent2)  
+2. [MAgent2 API Documentation](https://magent2.farama.org/introduction/basic_usage/)  
 
-1. [MAgent2 GitHub Repository](https://github.com/Farama-Foundation/MAgent2)
-2. [MAgent2 API Documentation](https://magent2.farama.org/introduction/basic_usage/)
-
-For further details on environment setup and agent interactions, please refer to the MAgent2 documentation.
+For environment setup and agent interaction details, refer to the MAgent2 documentation.  
