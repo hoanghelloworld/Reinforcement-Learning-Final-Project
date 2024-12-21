@@ -29,12 +29,16 @@ pip install -r requirements.txt
   you need to "copy&edit" on kaggle to run script, then upload the red.pt file to kaggle and correct the path in the source code
   
 - **`dqn_train/dqn_noise_network.ipynb`**: Main training script for the DQN with Noise Network agent.
-- 
+  
     [![Kaggle Notebook](https://github.com/user-attachments/assets/fa91a220-a957-49aa-b023-66f4dbcd19d6)](https://www.kaggle.com/code/huyhonglo/dqn-noise)
+
+    you need to "copy&edit" on kaggle to run script, then upload the red.pt file to kaggle and correct the path in the source code
   
 - **`vdn_mixer_train/vdn_mixer.ipynb`**: Main training script for the VDN agent.
-- 
+  
     [![Kaggle Notebook](https://github.com/user-attachments/assets/fa91a220-a957-49aa-b023-66f4dbcd19d6)](https://www.kaggle.com/code/huyhonglo/vdn-mixer)
+
+    you need to "copy&edit" on kaggle to run script, then upload the red.pt file to kaggle and correct the path in the source code
   
 - **`test_model/eval_test/test_dqn(others same).ipynb`**: Evaluation code against different opponents.  
 
