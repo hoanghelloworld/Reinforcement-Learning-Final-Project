@@ -41,7 +41,7 @@ pip install -r requirements.txt
     you need to "copy&edit" on kaggle to run script, then upload the red.pt file to kaggle and correct the path in the source code
   
 - **`test_model/eval_test/test_dqn(others same).ipynb`**: Evaluation code against different opponents.  
-
+you can find checkpoints at source model/dqn/checkpoints or model/vdn_mixer/
 ## Report
 Survey_on_MAgent2_Battle_Using_DQN_Variants_Report_Group22.pdf
 - Experimental setup  
